@@ -10,22 +10,22 @@ import java.util.Arrays;
 
 public class ReportCard {
 
-    private final String TAG = "REPORT CARD";
+    public static final String TAG = "REPORT CARD";
     private final String SCHOOL_NAME = "Udacity University";
 
     private String[] schoolSubjects = new String[]{"Art", "History", "Math, Science", "Social Studies"};
 
     // Class constructor
-    public ReportCard(String[] schoolSubjects) {
+    public ReportCard() {
         this.schoolSubjects = schoolSubjects;
     }
 
     @Override
     public String toString() {
         return "ReportCard{" +
-                "TAG='" + TAG + '\'' +
-                ", SCHOOL_NAME='" + SCHOOL_NAME + '\'' +
-                ", schoolSubjects=" + Arrays.toString(schoolSubjects) +
+                "TAG = '" + TAG + '\'' +
+                "\n SCHOOL_NAME = '" + SCHOOL_NAME + '\'' +
+                "\n schoolSubjects = " + Arrays.toString(schoolSubjects) +
                 '}';
     }
 }
