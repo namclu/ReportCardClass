@@ -15,13 +15,13 @@ public class ReportCard {
     private String[] schoolSubjects = new String[]{"Art", "History", "Math", "Science"};
 
     // Instance variables
-    private String studentName;
+    private String mStudentName;
 
     // Grades are values between 0 - 100
-    private int gradeArt;
-    private int gradeHistory;
-    private int gradeMath;
-    private int gradeScience;
+    private int mGradeArt;
+    private int mGradeHistory;
+    private int mGradeMath;
+    private int mGradeScience;
 
     // Class constructor
     public ReportCard(
@@ -43,7 +43,7 @@ public class ReportCard {
         return "ReportCard{" +
                 "\n TAG = '" + TAG + '\'' +
                 "\n SCHOOL_NAME = '" + SCHOOL_NAME + '\'' +
-                "\n studentName = " + getStudentName() +
+                "\n mStudentName = " + getStudentName() +
                 "\n" + schoolSubjects[0] + " = " + getGradeArt() +
                 "\n" + schoolSubjects[1] + " = " + getGradeHistory() +
                 "\n" + schoolSubjects[2] + " = " + getGradeMath() +
@@ -56,57 +56,57 @@ public class ReportCard {
      */
 
     public String getStudentName() {
-        return studentName;
+        return mStudentName;
     }
 
     public void setStudentName(String studentName) {
         if (studentName != null) {
-            this.studentName = studentName;
+            mStudentName = studentName;
         } else
-            studentName = "No name given";
+            mStudentName = "No name given";
     }
 
     public int getGradeArt() {
-        return gradeArt;
+        return mGradeArt;
     }
 
     public void setGradeArt(int gradeArt) {
         if (gradeArt >= 0 && gradeArt <=100) {
-            this.gradeArt = gradeArt;
+            mGradeArt = gradeArt;
         }else
-            gradeArt = 0;
+            mGradeArt = 0;
     }
 
     public int getGradeHistory() {
-        return gradeHistory;
+        return mGradeHistory;
     }
 
     public void setGradeHistory(int gradeHistory) {
         if (gradeHistory >= 0 && gradeHistory <=100) {
-            this.gradeHistory = gradeHistory;
+            mGradeHistory = gradeHistory;
         } else
-            gradeHistory = 0;
+            mGradeHistory = 0;
     }
 
     public int getGradeMath() {
-        return gradeMath;
+        return mGradeMath;
     }
 
     public void setGradeMath(int gradeMath) {
         if (gradeMath >= 0 && gradeMath <=100) {
-            this.gradeMath = gradeMath;
+            mGradeMath = gradeMath;
         } else
-            gradeMath = 0;
+            mGradeMath = 0;
     }
 
     public int getGradeScience() {
-        return gradeScience;
+        return mGradeScience;
     }
 
     public void setGradeScience(int gradeScience) {
         if (gradeScience >= 0 && gradeScience <=100) {
-            this.gradeScience = gradeScience;
+            mGradeScience = gradeScience;
         } else
-            gradeScience = 0;
+            mGradeScience = 0;
     }
 }
